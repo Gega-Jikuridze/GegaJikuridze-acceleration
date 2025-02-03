@@ -87,6 +87,10 @@ export const CardModal = styled.div`
   justify-content: start;
   /* gap: 20px; */
 
+  @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+
   .details {
     position: absolute;
     top: 50%;
@@ -117,6 +121,12 @@ export const CardModal = styled.div`
     b{
       color: black;
     }
+
+    @media screen and (max-width: 800px) {
+      p{
+        font-size: 15px;
+      }
+  }
 
     
   }
