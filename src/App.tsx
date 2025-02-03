@@ -4,7 +4,6 @@ import "./app.css";
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Router from "./Routes";
-import useTopScroll from "./hooks/useScrollTop";
 
 function App() {
   const queryClient = new QueryClient({
@@ -15,9 +14,6 @@ function App() {
       },
     },
   });
-
-  const { scroller } = useTopScroll();
-  
 
   return (
     <div className="container">
