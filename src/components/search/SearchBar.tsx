@@ -27,13 +27,17 @@ const SearchBar: React.FC<SearchBarProps> = ({ handleChange }) => {
 
   return (
     <FormStyle onSubmit={onSubmit}>
+      <div>
+      <label htmlFor="searchBar"><i className='bx bx-search-alt' ></i></label>
       <input
+        id="searchBar"
         className="Search"
         type="search"
         value={searchValue}
         onChange={onChange}
-        placeholder="Search without Submit"
+        placeholder="Search"
       />
+      </div>
     </FormStyle>
   );
 };

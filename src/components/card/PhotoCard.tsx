@@ -1,4 +1,4 @@
-// PhotoCard component for map all cards for HomePage
+// Photo   component for map all cards for HomePage
 
 import React, { useState } from "react";
 import ViewModal from "../modal/ViewModal";

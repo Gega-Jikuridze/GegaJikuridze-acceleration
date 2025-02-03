@@ -66,6 +66,8 @@ export const Loading = styled.div`
 // Styles for CardModal
 
 export const CardModal = styled.div`
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -74,7 +76,7 @@ export const CardModal = styled.div`
   color: black;
   z-index: 51;
 
-  width: 1200px;
+  width: 50%;
   height: 600px;
   background-color: white;
   border-radius: 10px;
@@ -83,10 +85,15 @@ export const CardModal = styled.div`
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 40px;
+  /* gap: 20px; */
 
   .details {
-    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -94,19 +101,33 @@ export const CardModal = styled.div`
     justify-content: center;
     opacity: 1;
     transition: width 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    &:hover{
+      opacity: 1;
+      background-color: transparent;
+      background-color: #38639a85;
+    }
 
     p {
       font-size: 32px;
       margin: 0;
+      color: #F8BF28;
     }
+
+    b{
+      color: black;
+    }
+
+    
   }
 
   img {
-    width: 750px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     justify-content: start;
     transition: width 0.5s ease;
+    
   }
 
   .icon {

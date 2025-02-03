@@ -47,7 +47,7 @@ const HistoryPage: React.FC = () => {
             </option>
           ))}
         </select>
-        <h1>Choose your searched Photos</h1>
+        <h1>Search History</h1>
       </HistoryStyle>
       {cache && (
         <div>

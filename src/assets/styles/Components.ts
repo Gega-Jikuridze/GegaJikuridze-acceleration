@@ -67,17 +67,48 @@ export const FormStyle = styled.form`
   justify-content: center;
 
   .Search {
-    width: 90%;
+    width: 50%;
     border-radius: 10px;
     height: 45px;
     border: 3px solid #F8BF28;
     padding-left: 20px;
-    box-shadow: 1px 1px 8px #F8BF28;
+    background-color: transparent;
+    color: #F8BF28;
+    font-weight: 900;
+  }
 
-    @media screen and (max-width: 660px) {
-      width: 70%;
+  div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  
+  i{
+    color: #F8BF28;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all.3s;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 100%;
+    transform: scale(1.1);
+    &:hover{
+      box-shadow: 1px 1px 3px black;
+      transform: scale(1);
     }
   }
+ 
+
+    @media screen and (max-width: 660px) {
+      width: 100%;
+      
+      .searchForm{
+        flex-direction: column;
+      }
+    }
+  
 `;
 
 
